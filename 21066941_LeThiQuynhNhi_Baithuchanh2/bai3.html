@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/bai3.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 class="heading"> LIÊN HỆ </h1>
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Thông tin</h3>
+          <div class="info">
+            <div class="information">
+              <img src="https://cdn-icons-png.flaticon.com/512/447/447031.png" class="icon" alt="" />
+              <p>Kp.6, P. Linh Trung, Tp.Thủ Đức, Tp.HCM</p>
+            </div>
+            <div class="information">
+              <img src="https://cdn-icons-png.flaticon.com/512/4338/4338894.png" class="icon" alt="" />
+              <p>info.@uit.edu.vn</p>
+            </div>
+            <div class="information">
+              <img src="https://cdn-icons-png.flaticon.com/512/483/483947.png" class="icon" alt="" />
+              <p>+84 28 372 52002</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Hãy liên hệ với chúng tôi bất cứ khi nào!!!</h3>
+            <div class="input-container">
+                <input type="text" id="name" name="name" class="input" oninput="checkInput(this)" />
+                <label for="">Họ và tên</label>
+              <span>Họ và tên</span>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" class="input" oninput="checkInput(this)" />
+                <label for="">Địa chỉ e-mail</label>
+              <span>Địa chỉ e-mail</span>
+            </div>
+            <div class="input-container">
+                <input type="text" id="subject" name="subject" class="input" oninput="checkInput(this)" />
+                <label for="">Tiêu đề bài viết</label>
+              <span>Tiêu đề bài viết</span>
+            </div>
+            <div class="input-container textarea">
+                <textarea id="message" name="message" class="input" oninput="checkInput(this)"></textarea>
+                <label for="">Nội dung cần gửi</label>
+              <span>Nội dung cần gửi</span>
+            </div>
+            <button type="button" class="btn" onclick="submitForm()">Gửi tin nhắn <i class="fa fa-check-circle-o"></i>
+        </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="bai3.js"></script>
+  </body>
+</html>
